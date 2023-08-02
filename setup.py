@@ -13,7 +13,7 @@ with open("README.md", encoding="utf-8") as f:
   
 setuptools.setup(
     name="Yumikolab",
-    version=__version__,
+    version=version,
     author="Yumiko-Pvt",
     long_description=readme,
     license='GNU General Public License v3.0',

@@ -5,7 +5,12 @@ with open("requirements.txt", encoding="utf-8") as r:
     requires = [i.strip() for i in r]
 
 with open("Yumikolab/__init__.py", encoding="utf-8") as f:
-    version = re.findall(r"__version__ = \"(.+)\"", f.read())[0]
+    version_match = re.findall(r"__version__ = \"(.+)\"", f.read())
+    if version_match:
+        version = version_match[0]
+    else:
+        version = "Version not found"
+
 
 with open("README.md", encoding="utf-8") as f:
     readme = f.read()

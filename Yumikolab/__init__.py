@@ -3,7 +3,7 @@ __author__ = 'YumikoLab'
 __license__ = 'GNU Lesser General Public License v3.0 (LGPL-3.0)'
 __description__ = 'A Python library for Telegram, similar to Pyrogram.'
 
-from Yumikolab.client import Yumikolab as Yumikoclient
+from Yumikolab.client import Yumikolab 
 
 def Yumikolab():
   print(

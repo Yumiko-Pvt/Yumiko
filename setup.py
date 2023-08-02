@@ -6,7 +6,7 @@ with open("requirements.txt", encoding="utf-8") as r:
 
 # find repository version
 with open("Yumikolab/__init__.py", encoding="utf-8") as f:
-    version = re.findall(r"__version__ = \"(.+)\"", f.read())
+    version = re.findall(r"__version__ = \"(.+)\"", f.read())[0]
 
 with open("README.md", encoding="utf-8") as f:
     readme = f.read()

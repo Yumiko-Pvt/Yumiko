@@ -4,13 +4,9 @@ import setuptools
 with open("requirements.txt", encoding="utf-8") as r:
     requires = [i.strip() for i in r]
 
+# find repository version
 with open("Yumikolab/__init__.py", encoding="utf-8") as f:
-    version_match = re.findall(r"__version__ = \"(.+)\"", f.read())
-    if version_match:
-        __version__ = version_match[0]
-    else:
-        __version__ = "Version not found"
-
+    version = re.findall(r"__version__ = \"(.+)\"", f.read())[0]
 
 with open("README.md", encoding="utf-8") as f:
     readme = f.read()

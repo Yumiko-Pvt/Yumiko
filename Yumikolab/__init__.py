@@ -8,7 +8,7 @@ from Yumikolab.client import Yumikolab
 def Yumikolab():
   print(
     "Yumikolab Successfully Installed.." + "\n"
-    f"Version : {__version__}"\n
-    f"License : {__license__}"\n
-    f"Author : {__author__}"\n
+    f"Version : {__version__}" + "\n"
+    f"License : {__license__}" + "\n"
+    f"Author : {__author__}" + "\n"
   )

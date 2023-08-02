@@ -7,9 +7,9 @@ with open("requirements.txt", encoding="utf-8") as r:
 with open("Yumikolab/__init__.py", encoding="utf-8") as f:
     version_match = re.findall(r"__version__ = \"(.+)\"", f.read())
     if version_match:
-        version = version_match[0]
+        __version__ = version_match[0]
     else:
-        version = "Version not found"
+        __version__ = "Version not found"
 
 
 with open("README.md", encoding="utf-8") as f:
